@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-pixel: "Press Start 2P", monospace;
+}
+
+/* Custom styled scrollbars to look retro and clean */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e2e;
+  border-left: 1px solid #313244;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #45475a;
+  border: 1px solid #11111b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #585b70;
+}
+
+/* Custom Retro Bevel and Pixel effects */
+.retro-bevel {
+  border-top: 3px solid rgba(255,255,255,0.4);
+  border-left: 3px solid rgba(255,255,255,0.4);
+  border-bottom: 3px solid rgba(0,0,0,0.6);
+  border-right: 3px solid rgba(0,0,0,0.6);
+}
+
+.retro-bevel-inset {
+  border-top: 3px solid rgba(0,0,0,0.6);
+  border-left: 3px solid rgba(0,0,0,0.6);
+  border-bottom: 3px solid rgba(255,255,255,0.4);
+  border-right: 3px solid rgba(255,255,255,0.4);
+}
+
+.retro-shadow {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+@keyframes pixel-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.pulse-pixel {
+  animation: pixel-pulse 1s steps(2, start) infinite;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix: PixelLab",
+  "description": "A retro pixel art editor and AI-powered seamless tile generator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
